@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Response, status
-from app.config.db import users as collection
-from app.schemas.user_schema import UserEntity, UsersEntity
-from app.models.user_model import UserModel
+from config.db import users as collection
+from schemas.user_schema import UserEntity, UsersEntity
+from models.user_model import UserModel
 from passlib.hash import sha256_crypt
 from bson import ObjectId
 from starlette.status import HTTP_200_OK, HTTP_204_NO_CONTENT
