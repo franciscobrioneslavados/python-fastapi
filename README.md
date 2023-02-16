@@ -20,8 +20,3 @@ pip install -r requirements.txt
 ```
 uvicorn main:app --reload
 ```
-
-### Dockerize Mongo
-```
-docker run --name docker-mongo -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONGO_INITDB_ROOT_USERNAME=<USER> -e MONGO_INITDB_ROOT_PASSWORD=<PASS> mongo:latest
-```
