@@ -1,24 +1,18 @@
 # Python REST API with FastAPI and MongoDB
 
-### Create a Virtual Environment for Python
-## Linux
+### Install poetry as a global dependecies 
 ```
-python -m venv venv
-source venv/lib/activate
-```
-## Windows
-```
-python -m venv venv
-venv\Scripts\activate.bat
+pip install poetry
 ```
 
-### Install Dependecies
+### Install dependecies for the project 
 ```
-pip install -r requirements.txt
+poetry install
 ```
+
 ### RUN
 ```
-uvicorn main:app --reload
+poetry run ./run.sh
 ```
 
 ### Dockerize Mongo
